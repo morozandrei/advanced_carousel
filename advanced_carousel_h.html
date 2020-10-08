@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Advanced Carousel</title>
+    <style>
+        body {
+            background-color: #333; 
+        }
+        .carousel { 
+            width: 800px;
+            height: 700px;
+            border: 2px solid #999;
+            margin: 20px auto;
+            overflow: hidden;
+        }
+        .carousel .slides {
+            background-color: #444;
+            height: 600px;
+            width: 2408px;
+            transition: 0.8s;
+        }
+        #s2:target .slides { 
+            margin-left: -804px;
+        }
+        #s3:target .slides {
+            margin-left: -1608px;
+        }
+        .carousel>.controls {
+            height: 102px;
+            background-color: #000;
+            text-align: center;
+        }
+        .carousel>.controls img {
+            height: 102px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="carousel">
+            
+        <div id="s1">
+            <div id="s2">
+                <div id="s3">
+                    <div class="slides">
+                        <img src="images/new-york.jpg" alt="New-York">
+                        <img src="images/london.jpg" alt="London">
+                        <img src="images/shanghai.jpg" alt="Shanghai">
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="controls">
+            <a href="#s1"><img src="images/new-york.jpg" alt="New-York"></a>
+            <a href="#s2"><img src="images/london.jpg" alt="London"></a>
+            <a href="#s3"><img src="images/shanghai.jpg" alt="Shanghai"></a>
+        </div>
+
+    </div>
+    
+</body>
+</html>
